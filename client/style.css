@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+form {
+    position: fixed;
+    top: 45%;
+    height: 10%;
+    width: 40%;
+    left: 30%;
+    background-color: green;
+    text-align: center;
+}
+
+form input {
+    position: relative;
+    margin-top: 10px;
+}
+
+div {
+    position: fixed;
+}
+
+#users {
+    background-color: yellow;
+    left: 0;
+    height: 100%;
+    width: 20%;
+}
+
+#users span {
+    position: relative;
+    width: 100%;
+}
+
+#msgs {
+    background-color: #458fff;
+    width: 80%;
+    height: 85%;
+    right: 0;
+    overflow: scroll;
+}
+
+#in {
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    background-color: orange;
+}
+
+#in span {
+    position: fixed;
+    left: 0;
+    width: 20%;
+}
+
+#in button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 15%;
+    background-color: blue;
+}
+
+#in input {
+    position: fixed;
+    width: 60%;
+    height: 15%;
+    left: 20%;
+    outline: none;
+    background: none; 
+}

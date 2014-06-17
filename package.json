@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "mongodb":"latest",
+        "socket.io":"latest",
+        "express":"latest",
+        "jade":"latest",
+        "body-parser":"latest"
+    }
+}

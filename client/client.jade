@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div#msgs
+        for msg in msgs
+            span= msg.msg
+            p= msg.user
+    div#in
+        span#usr= usr
+        input#txt
+        button#btn send
+    script(src='/socket.io/socket.io.js')
+    script(src='/client.js')

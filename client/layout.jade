@@ -1,0 +1,11 @@
+doctype html5
+html
+    head
+        title chat-app
+        link(rel='stylesheet', href='/style.css')
+    body
+        div#users
+            for user in users
+                if user != usr
+                    span.user= user
+        block content
