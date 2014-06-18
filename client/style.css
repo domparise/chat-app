@@ -1,73 +1,109 @@
+/*
+    Dom Parise - 6/17/14 - chat app 
+    client/style.css
+
+    application styling
+*/
 body {
     margin: 0;
+}
+
+#main {
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    border: 5px solid black;
+    top: 10%; 
+    left: 25%;
+}
+
+#users {
+    position: absolute;
+    left: 0;
+    height: 85%;
+    width: 20%;
+    overflow: scroll;
+}
+
+#users div {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#users div:hover {
+    background-color: red;
+}
+
+.userClicked {
+    background-color: blue;
 }
 
 form {
     position: fixed;
     top: 45%;
-    height: 10%;
-    width: 40%;
-    left: 30%;
-    background-color: green;
-    text-align: center;
-}
-
-form input {
-    position: relative;
-    margin-top: 10px;
-}
-
-div {
-    position: fixed;
-}
-
-#users {
-    background-color: yellow;
-    left: 0;
-    height: 100%;
     width: 20%;
-}
-
-#users span {
-    position: relative;
-    width: 100%;
+    left: 40%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
 }
 
 #msgs {
-    background-color: #458fff;
-    width: 80%;
-    height: 85%;
+    position: absolute;
+    width: 76%;
+    height: 78%;
     right: 0;
     overflow: scroll;
+    padding: 2%;
+    border-left: 1px solid black;
+}
+
+#msgs div {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
 }
 
 #in {
+    position: absolute;
     width: 100%;
     height: 15%;
     bottom: 0;
-    background-color: orange;
+    border-top: 1px solid black;
 }
 
-#in span {
-    position: fixed;
-    left: 0;
+#usr {
+    position: absolute;
     width: 20%;
+    font-size: 150%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#to {
+    position: absolute;
+    width: 20%;
+    left: 20%;
+    padding-left: 10px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#in textarea {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 40%;
 }
 
 #in button {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 20%;
-    height: 15%;
-    background-color: blue;
-}
-
-#in input {
-    position: fixed;
-    width: 60%;
-    height: 15%;
-    left: 20%;
-    outline: none;
-    background: none; 
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 15%;
+    height: 80%;
 }

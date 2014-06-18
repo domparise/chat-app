@@ -1,13 +1,19 @@
+// 
+    Dom Parise - 6/17/14 - chat app 
+    client/client.jade
+    
+    client portion of the app, displays messages and users, as well as providing interface
 extends layout
-
 block content
     div#msgs
         for msg in msgs
-            span= msg.msg
-            p= msg.user
+            div= msg.user + ': ' + msg.msg
     div#in
         span#usr= usr
-        input#txt
+        div#to
+            span To: 
+            span#other 
+        textarea#txt
         button#btn send
     script(src='/socket.io/socket.io.js')
     script(src='/client.js')

@@ -1,11 +1,16 @@
-doctype html5
+// 
+    Dom Parise - 6/17/14 - chat app 
+    client/layout.jade
+    
+    client layout, with list of connected users always visible
 html
     head
         title chat-app
         link(rel='stylesheet', href='/style.css')
     body
-        div#users
-            for user in users
-                if user != usr
-                    span.user= user
-        block content
+        div#main
+            div#users
+                for user in users
+                    if user != usr
+                        div= user
+            block content

@@ -1,7 +1,12 @@
+// 
+    Dom Parise - 6/17/14 - chat app 
+    client/index.jade
+    
+    initial page, containing form for user to post username
 extends layout
-
 block content
     form(action='/',method='POST')
-        label username:
-        input(type='text',name='user',required)
+        label Name:&nbsp;&nbsp; 
+        input(type='text',name='user',placeholder='Username',required)
+        | &nbsp;&nbsp;
         input(type='submit')
