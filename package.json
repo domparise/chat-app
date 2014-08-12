@@ -1,4 +1,6 @@
 {
+    "author": "Dom Parise",
+    "license": "MIT",
     "dependencies": {
         "mongodb":"latest",
         "socket.io":"latest",
